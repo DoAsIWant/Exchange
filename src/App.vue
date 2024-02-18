@@ -1,15 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <ExchangeMenu/>
+   <ExchangeForm/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ExchangeForm from "./components/ExchangeForm.vue"
+import ExchangeMenu from "./components/ExchangeMenu.vue"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ExchangeForm,
+    ExchangeMenu,
   }
 }
 </script>
@@ -19,8 +23,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  text-align: center;
 }
 </style>
